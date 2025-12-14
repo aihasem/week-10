@@ -1,31 +1,77 @@
 <html>
 <head>
-	<title>HTML form </title>
+<title> HTML Forms </title>
 </head>
-<body>
-<h1>Selamat Datang</h1>
+<h1> HTML FORM PRACTICE
+<h2> BORANG TAPA UITM
+</H1>
+</H2>
+<form action="index.php" method="post" style="color:pink; background-color:black">
 
-<form>
-	<label>first name</label><input type="text"><br>
-	<label>last name</label><input type="text"><br>
-	<label>password</label><input type="password"><br>
-	<label> Gender</label>
-	<input type="radio" value="Male"> Male
-	<input type="radio" value="Female"> Female
-	<br>
+	<label for="Full Name">Full Name </label>
+	<input id="Full Name" required placeholder="Masukkan Nama Mu"><tr><br>
 	
-	<label> Interest</label><br>
-	<input type="checkbox" value="option 1"> Interest 1
-	<br>
-	<input type="checkbox" value="option 2"> Interest 2
-	<br>
+	<label for="password">Enter Password </label>
+	<input type="password" id="password" required placeholder="Enter Password"><tr><br>
 	
-	<label> Describe Yourself </label> <br>
-	<textarea name="message" rows="10" cols="30">
-Aiman sangat pandai.
-</textarea>
-<form>
+	<label for="Gender">Gender </label>
+	<input type="radio" name="gender" value="Male"> Male
+	<input type="radio" name="gender" value="Female"> Female 
+	<tr><br>
+
+
 	
+	<label for="Email">Enter Email </label>
+	<input type="Email" id="email" required placeholder="Your email"><tr><br>
+	
+	<label for="Age">Age </label>
+	<input type="number" id="umur" min="18" max="100" required placeholder="Your Age on 2025"><tr><br>
+	
+	<label for="date">Birth Date </label>
+	<input type="date" id="date" required><tr><br>
+	
+	<label for="time">Time of Complaint </label>
+	<input type="time" id="time" required><tr><br>
+	
+	<label for="category">Category </label>
+	<select id="category" required>
+	<option value="">-- Select Category --</option>
+	<option>Student</option>
+	<option>Parent</option>
+	<option>Friend</option>
+	<option>Lecturer</option>
+	<option>Partner</option>
+	</select><tr><br>
+	
+	<label for="category">Student Part </label>
+	<select id="category" required>
+	<option value="">-- Student Part --</option>
+	<option>Part 1</option>
+	<option>Part 2</option>
+	<option>Part 3</option>
+	<option>Part 4</option>
+	<option>Part 5</option>
+	</select><tr><br>
+	
+	<label for="comment">Comment </label><br>
+	<textarea id="comment" rows="4" cols="30" placeholder="Enter your comment here"></textarea><tr><br>
+
+	<label for="moodColor">Fav Color </label>
+	<input type="color" id="Fav Color" name="Fav Color" value="#ff0000"><br><br>
+
+<video width="560" height="315" controls autoplay loop muted>
+  <source src="GD .mp4" type="video/mp4">
+</video>
+<br><br>
+
+
+
+
+
+<input type="submit">
+<input type="reset">
+
+</form>
 </body>
-
 </html>
+
